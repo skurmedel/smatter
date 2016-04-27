@@ -1,7 +1,7 @@
 # smatter
 Smatter is a very small language focused on writing image processing "kernels". 
 
-# Design goals
+## Design goals
 
 A great deal of image processing operations are of two kinds:
 
@@ -12,6 +12,8 @@ A great deal of image processing operations are of two kinds:
 
 Thus many operations only need two things: the current pixel value and a way to sample neighbours. Some operations require data that can't be computed as a function of the pixelvalue and its neighbours, but the final processing step usually can be. So smatter should accomodate for this too by meshing well with C.
 
+The main use case of smatter is writing these kernels.
 
-# The name
-In English, a smatter is a small amount of something. In Swedish smatter usually refers to the blare of small things hitting a surface, like rain on a window sill. I thought both of these interpretations where apt for the intended application.
+
+## The name
+In swedish smatter usually refers to the blare of small things hitting a surface, like rain on a window sill. The english interpretation works too :)
