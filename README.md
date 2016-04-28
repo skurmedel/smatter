@@ -12,6 +12,9 @@ Thus many operations only need two things: the current pixel value and a way to 
 
 The main use case of smatter is writing these kernels.
 
+## Todo
+
+- Theoretically an image consists of several channels, like RGB, or just one for a gray scale image. Some operations require knowledge about the other channels. Some can act independently on each channel.
 
 
 ## The name
