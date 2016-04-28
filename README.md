@@ -16,6 +16,21 @@ The main use case of smatter is writing these kernels.
 
 - Theoretically an image consists of several channels, like RGB, or just one for a gray scale image. Some operations require knowledge about the other channels. Some can act independently on each channel.
 
+## Syntax ideas
+
+``` 
+kernel gamma<float>(g: float)
+{
+  pixel = pow(pixel, g);
+}
+
+// A kernel that operates on a single channel, using data from another.
+kernel sub_chan<float>(b: ch<float>)
+{
+  pixel -= sample(b);
+}
+```
+
 
 ## The name
 In swedish smatter usually refers to the blare of small things hitting a surface, like rain on a window sill. The english interpretation works too :)
