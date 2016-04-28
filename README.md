@@ -12,12 +12,6 @@ Thus many operations only need two things: the current pixel value and a way to 
 
 The main use case of smatter is writing these kernels.
 
-## Design goals
-
-- Must mesh well with C. Preferably a kernel should be invocable from C using the runtime libraries.
-- Lightweight language.
-- Support for basic vector operations.
-- Interpolated sampling for neighbour value lookups.
 
 
 ## The name
